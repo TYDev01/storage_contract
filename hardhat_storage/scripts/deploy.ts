@@ -36,13 +36,13 @@ async function main() {
   // Verify the contract was deployed correctly
   const deployedCode = await deployer.provider.getCode(contractAddress);
   if (deployedCode === "0x") {
-    console.log("❌ Contract deployment failed - no bytecode found!");
+    console.log("Contract deployment failed - no bytecode found!");
     process.exit(1);
   } else {
     console.log("✅ Contract bytecode verified on-chain");
   }
 
-  console.log("\n📝 Deployment Summary:");
+  console.log("\nDeployment Summary:");
   console.log("Network:", (await deployer.provider.getNetwork()).name || "CoreDAO Testnet");
   console.log("Chain ID:", (await deployer.provider.getNetwork()).chainId);
   console.log("Contract Address:", contractAddress);
@@ -51,11 +51,11 @@ async function main() {
 
 main()
   .then(() => {
-    console.log("\n🎉 Deployment completed successfully!");
+    console.log("\n Deployment completed successfully!");
     process.exit(0);
   })
   .catch((error) => {
-    console.error("\n❌ Deployment failed:");
+    console.error("\n Deployment failed:");
     console.error(error);
     process.exit(1);
   });
