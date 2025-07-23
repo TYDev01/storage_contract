@@ -17,3 +17,6 @@ npx hardhat ignition deploy ./ignition/modules/Storage.ts
 ```
     SEPOLIA CONTRACT ADDRESS: 0xbcACcA572faa7D45AC0823E2C0ea7a71e05F5771
 ```
+
+```
+    COREDAO CONTRACT ADDRESS: 0x5Ae89C39AB8fDC506AB7d0DD127E8AD34fe7581F
