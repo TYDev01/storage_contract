@@ -1,0 +1,14 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.28"
+
+# RPC URLs
+[rpc_endpoints]
+sepolia = "https://rpc.sepolia.org"
+coredao = "https://rpc.test2.btcs.network"
+
+# Etherscan configuration for verification
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
